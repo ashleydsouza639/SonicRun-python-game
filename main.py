@@ -56,8 +56,7 @@ class player(object):
             win.blit(self.fall,(self.x,self.y))
 
         elif self.jumping:                             #jump
-            self.y -= self.jumpList[self.jumpCount] * 1.2
-            print(self.jumpList[self.jumpCount])
+            self.y -= self.jumpList[self.jumpCount] * 1.2           
             win.blit(self.jump[self.jumpCount//18], (self.x,self.y))
             self.jumpCount += 1
             if self.jumpCount > 108:
